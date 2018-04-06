@@ -123,25 +123,38 @@
 // 	return max_so_far / k;
 // }
 
-function main(numbers) {
-    let result = new Array(numbers.length);
+// function main(numbers) {
+//     let result = new Array(numbers.length);
     
-    let before = 1;
-    for (let i = 0; i < numbers.length; ++i) {
-      result[i] = before;
-      before *= numbers[i];
-    }
+//     let before = 1;
+//     for (let i = 0; i < numbers.length; ++i) {
+//       result[i] = before;
+//       before *= numbers[i];
+//     }
   
-    let after = 1;
-    for (let i = numbers.length - 1; i >= 0; --i) {
-      result[i] *= after;
-      after *= numbers[i];
-    }
+//     let after = 1;
+//     for (let i = numbers.length - 1; i >= 0; --i) {
+//       result[i] *= after;
+//       after *= numbers[i];
+//     }
     
-    return result;
-  }
+//     return result;
+//   }
 
-  console.log(main([1, 3, 9, 4]));
+//   console.log(main([1, 3, 9, 4]));
 
-  
+//   function twoDimension(arr) {
+//   const zeroRows = [];
+//   const zeroCols = [];
 
+//   for (let i=0; i<arr.length; i++) {
+//       var row = arr[i];
+//       for (var j=0; j<row.length; j++) {
+//           const item = row[j];
+//           if (item === 0) {
+//               zeroRows[i] = true;
+//               zeroCols[j] = true;
+//           }
+//       }
+//   }
+// }
